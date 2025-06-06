@@ -1,0 +1,6 @@
+[
+    { "link": "/", "componente": "Home", "nombre": "Inicio" },
+    { "link": "/sobre-mi", "componente": "SobreMi", "nombre": "Sobre mí" },
+    { "link": "/proyectos", "componente": "Proyectos", "nombre": "Proyectos" },
+    { "link": "/contacto", "componente": "Contacto", "nombre": "Contacto" }
+]

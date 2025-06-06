@@ -1,0 +1,6 @@
+{
+    "nombre": "Lucas Jonas Diaz",
+    "imagen": "/imagenes/imagenlucas.jpeg",
+    "hobbies": ["Fútbol", "Videojuegos", "Computadoras"],
+    "skills": ["HTML", "CSS", "JavaScript", "React"]
+}
