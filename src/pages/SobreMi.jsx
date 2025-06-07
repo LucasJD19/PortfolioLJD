@@ -9,33 +9,43 @@ const SobreMi = () => {
   }, []);
 
   return (
-    <main>
-      
-
-      <div className="card">
-        <img src={info.imagen} alt="Yo" />
-        <h3><strong>{info.nombre}</strong></h3>
-        
-      </div>
-
-      <div className="card">
-        <h3>Hobbies</h3>
-        <div className="card-list">
-          {info.hobbies?.map((h, i) => (
-            <div key={i} className="mini-card">{h}</div>
-          ))}
+    <>
+      <div className="stars"></div>
+      <div className="shooting-star"></div>
+      <div className="shooting-star"></div>
+      <div className="shooting-star"></div>
+      <div className="shooting-star"></div>
+      <main>
+        <div className="card">
+          <img src={info.imagen} alt="Yo" />
+          <h3>
+            <strong>{info.nombre}</strong>
+          </h3>
         </div>
-      </div>
 
-      <div className="card">
-        <h3>Skills</h3>
-        <div className="card-list">
-          {info.skills?.map((s, i) => (
-            <div key={i} className="mini-card">{s}</div>
-          ))}
+        <div className="card">
+          <h3>Hobbies</h3>
+          <div className="card-list">
+            {info.hobbies?.map((h, i) => (
+              <div key={i} className="mini-card">
+                {h}
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </main>
+
+        <div className="card">
+          <h3>Skills</h3>
+          <div className="card-list">
+            {info.skills?.map((s, i) => (
+              <div key={i} className="mini-card">
+                {s}
+              </div>
+            ))}
+          </div>
+        </div>
+      </main>
+    </>
   );
 };
 

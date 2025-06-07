@@ -31,7 +31,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 5px 50px;
-  background-color: rgba(0, 0, 0, 0.4); /* igual que el footer */
+  background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   color: white;
@@ -173,7 +173,7 @@ a:hover {
 
 
 .card {
-  background-color: rgba(154, 154, 154, 0.6); /* fondo translúcido */
+  background-color: rgba(174, 174, 174, 0.3); 
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 12px;
@@ -187,18 +187,18 @@ a:hover {
 
 .card:hover {
   transform: scale(1.02);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* Tema oscuro */
+
 .tema-oscuro .card {
-  background-color: rgba(30, 30, 30, 0.6);
+  background-color: rgba(30, 30, 30, 0.3);
   color: #fff;
 }
 
-/* Mini cards */
+
 .mini-card {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   padding: 0.5rem 1rem;
@@ -211,12 +211,11 @@ a:hover {
 }
 
 .mini-card:hover {
-  background-color: rgba(200, 200, 200, 0.6);
+  background-color: rgba(200, 200, 200, 0.3);
 }
 
-/* Tema oscuro mini-card */
 .tema-oscuro .mini-card {
-  background-color: rgba(42, 42, 42, 0.6);
+  background-color: rgba(42, 42, 42, 0.3);
   color: #fff;
 }
 
@@ -337,4 +336,59 @@ main, header, footer {
 }
 html, body {
   overflow-x: hidden;
+}
+
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 85vh;
+  padding: 2rem 10rem;
+  gap: 2rem;
+}
+
+.nombre {
+  font-size: 3rem;
+  background: linear-gradient(to right, #5b01d8, #fc2020);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-align: left;
+  display: flex;
+  flex: 1;
+}
+.tema-oscuro .nombre {
+  background: linear-gradient(to right, #ff0000, #6a00ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.descripcion {
+  flex: 1;
+  max-width: none;
+  width: 100%; 
+  color: #f0f0f0;
+  font-size: 1.15rem;
+  text-align: center;
+  font-weight: bold;
+}
+.card-desc {
+  background-color: rgba(174, 174, 174, 0.2); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 100%;     
+  max-width: 600px;
+  margin: auto;
+  color: #000;
+}
+.tema-claro .descripcion {
+  color: black;
 }
